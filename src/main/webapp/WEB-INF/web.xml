@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>QueryAllServlet</servlet-name>
+		<servlet-class>com.qdu.servlet.QueryAllServlet</servlet-class>
+	</servlet>
+	<!--给Servlet提供（映射)一个可供客户端访问的URI -->
+	<servlet-mapping>
+		<!--和servlet中的name必须相同 -->
+		<servlet-name>QueryAllServlet</servlet-name>
+		<!-- servlet的映射路径 -->
+		<url-pattern>/queryAllStudent</url-pattern>
+	</servlet-mapping>
+	<!-- 插入新员工servlet -->
+	<servlet>
+		<servlet-name>InsertServlet</servlet-name>
+		<servlet-class>com.qdu.servlet.InsertServlet</servlet-class>
+	</servlet>
+	<!--给Servlet提供（映射)一个可供客户端访问的URI -->
+	<servlet-mapping>
+		<!--和servlet中的name必须相同 -->
+		<servlet-name>InsertServlet</servlet-name>
+		<!-- servlet的映射路径 -->
+		<url-pattern>/insertServlet</url-pattern>
+	</servlet-mapping>
+	<!-- 查询部门名称 -->
+	<servlet>
+		<servlet-name>DeptServlet</servlet-name>
+		<servlet-class>com.qdu.servlet.DeptServlet</servlet-class>
+	</servlet>
+	<!--给Servlet提供（映射)一个可供客户端访问的URI -->
+	<servlet-mapping>
+		<!--和servlet中的name必须相同 -->
+		<servlet-name>DeptServlet</servlet-name>
+		<!-- servlet的映射路径 -->
+		<url-pattern>/deptServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 删除员工 -->
+	<servlet>
+		<servlet-name>DeletServlet</servlet-name>
+		<servlet-class>com.qdu.servlet.DeletServlet</servlet-class>
+	</servlet>
+	<!--给Servlet提供（映射)一个可供客户端访问的URI -->
+	<servlet-mapping>
+		<!--和servlet中的name必须相同 -->
+		<servlet-name>DeletServlet</servlet-name>
+		<!-- servlet的映射路径 -->
+		<url-pattern>/deleteServlet</url-pattern>
+	</servlet-mapping>
+	<!-- 更新员工 -->
+	<servlet>
+		<servlet-name>UpdateServlet</servlet-name>
+		<servlet-class>com.qdu.servlet.UpdateServlet</servlet-class>
+	</servlet>
+	<!--给Servlet提供（映射)一个可供客户端访问的URI -->
+	<servlet-mapping>
+		<!--和servlet中的name必须相同 -->
+		<servlet-name>UpdateServlet</servlet-name>
+		<!-- servlet的映射路径 -->
+		<url-pattern>/updateServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 查询单个员工 -->
+	<servlet>
+		<servlet-name>GetEmpByID</servlet-name>
+		<servlet-class>com.qdu.servlet.GetEmpByID</servlet-class>
+	</servlet>
+	<!--给Servlet提供（映射)一个可供客户端访问的URI -->
+	<servlet-mapping>
+		<!--和servlet中的name必须相同 -->
+		<servlet-name>GetEmpByID</servlet-name>
+		<!-- servlet的映射路径 -->
+		<url-pattern>/getEmpByID</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
